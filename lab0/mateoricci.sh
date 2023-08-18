@@ -20,7 +20,8 @@ for file in *; do mv "$file" "$(echo "$file" | sed 's/_es//g')"; done
 
 #opcional
 
-ffmpeg -i exercise_9.49 -ss 00:00:03 -to 00:00:20 exercise_9_solved.mp4 #a
+ffmpeg -i exercise_9_a.49 -ss 00:00:04 -to 00:00:20 exercise_9_a_solved.mp4 #a
 
+ffmpeg -i vocals_ok.mp3 -i base_ok.mp3 -filter_complex amix=inputs=2:duration=longest exercise_9_b.mp3 #b
 
 
