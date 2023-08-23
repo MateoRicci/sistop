@@ -50,7 +50,7 @@ echo "Ejercicio 5"
 echo ""
 
 {   #try
-    sort -n -k 3 atpplayers.inm
+    sort -n -k 3 atpplayers.in
 } || {  #catch
     echo "Error en el ejercicio 5"
 }
